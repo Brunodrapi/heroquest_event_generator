@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HeroQuest – Dungeon Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hq-banner">
+  <img src="img/heroquest-logo.webp" alt="HeroQuest">
+</div>
+  <header>
+    <div class="topbar">
+      <div>
+        <h1>HeroQuest – Dungeon Events</h1>
+        <p class="sub" id="subtitle">30% : événement • 70% : rien</p>
+      </div>
+
+      <div class="lang">
+        <button id="langFR" class="flag active" title="Français" aria-label="Français">🇫🇷</button>
+        <button id="langEN" class="flag" title="English" aria-label="English">🇬🇧</button>
+      </div>
+    </div>
+
+    <div class="statusline">
+      <div id="deckStatus" class="muted">—</div>
+      <div id="toast" class="toast" hidden></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="controls">
+      <button id="drawBtn" class="primary">Tirer un évenement</button>
+      <button id="drawCardBtn" class="secondary">Prochaine carte événement</button>
+      <button id="resetBtn" class="ghost">Reset</button>
+
+      <label class="toggle">
+        <input id="showOddsChk" type="checkbox" checked />
+        <span id="labelOdds">Afficher les chances</span>
+      </label>
+    </section>
+
+    <section class="card" id="card">
+      <div class="card-header">
+        <div class="icon" id="cardIcon">☁️</div>
+        <div class="head">
+          <h2 id="cardTitle">—</h2>
+          <div class="tags" id="cardTags"></div>
+          <div class="odds muted" id="oddsLine">—</div>
+        </div>
+      </div>
+
+      <div class="card-body" id="cardBody">
+        <p class="muted" id="hint">Clique sur “Draw”.</p>
+      </div>
+
+<!--       <div class="card-actions" id="cardActions" hidden>
+        <button id="rollBtn" class="secondary">Roll d6</button>
+        <div class="roll-result" id="rollResult"></div>
+      </div>
+    </section> -->
+
+    <section class="history">
+      <h3 id="historyTitle">History</h3>
+      <ol id="historyList"></ol>
+    </section>
+  </main>
+
+  <footer>
+    <small id="footerLine">Local only • GitHub Pages compatible</small>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
