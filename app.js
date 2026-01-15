@@ -49,8 +49,11 @@ function setStaticLabels() {
 
   if (qs("labelOdds")) qs("labelOdds").textContent = isFR ? "Afficher les chances" : "Show odds";
   if (qs("historyTitle")) qs("historyTitle").textContent = isFR ? "Historique" : "History";
-  if (qs("footerLine")) qs("footerLine").textContent = isFR ? "Local • Compatible GitHub Pages" : "Local only • GitHub Pages compatible";
-
+  if (qs("footerLine")) {
+  qs("footerLine").innerHTML = isFR
+    ? `Inspiré par <a href="https://www.drivethrurpg.com/fr/product/438534/axianquest-dungeon-events" target="_blank">le deck d'événement de donjon d'Axian Quest</a>`
+    : `Inspired by <a href="https://www.drivethrurpg.com/fr/product/438534/axianquest-dungeon-events" target="_blank">Axian Quest Dungeon event deck</a>`;
+}
   if (qs("hint")) qs("hint").textContent = isFR ? "Clique sur “Tirer un évenement”." : "Click “Draw an event ”.";
 
   // ✅ Rename main buttons

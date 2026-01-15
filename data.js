@@ -783,7 +783,7 @@ const EVENT_CARDS = [
       fr: {
         title: "Attaque surprise",
         text: [
-          "La porte la plus porche d'un héros tiré au hasard s'ouvre et  tous les monstres présents dans la pièce jouent immédiatement.",
+          "La porte la plus proche d'un héros tiré au hasard s'ouvre et tous les monstres présents dans la pièce jouent immédiatement.",
           "Piochez une autre carte s’il n’y a aucune porte fermée sur le plateau."
         ]
       },
@@ -903,14 +903,14 @@ const EVENT_CARDS = [
         title: "Folie du donjon",
         text: [
           "Les ténèbres et le mal du donjon peuvent briser l’esprit d’un héros.",
-          "Pour ce tour uniquement, le joueur le plus jeune contrôle et utilise immédiatement un héros au hasard, comme s’il s’agissait d’un monstre."
+          "Pour ce tour uniquement, un héros tiré au hasard attaque le héros le plus proche, comme s’il s’agissait d’un monstre."
         ]
       },
       en: {
         title: "Dungeon Madness",
         text: [
           "The darkness and the evil of the dungeon can destroy a hero's mind.",
-          "For this turn only, the youngest player controls and immediately uses a random hero, just like a monster."
+          "For this turn only, a randomly selected hero attacks the nearest hero as if they were a monster."
         ]
       }
     }
@@ -944,15 +944,17 @@ const EVENT_CARDS = [
       fr: {
         title: "Fantôme serviable",
         text: [
-          "L’esprit d’un aventurier défunt apparaît et révèle l’emplacement exact de l’objectif des héros sur le plateau (mais pas le chemin pour y parvenir). Puis il se dissout.",
-          "Si vous jouez sans maître du jeu, piochez une autre carte."
+          "L’esprit d’un aventurier défunt apparaît et révèle l’emplacement exact d'un objet . Puis il se dissout.",
+          "Piochez des cartes trésor jusqu'à tomber sur un objet.",
+          "Les autres cartes sont replacées sous la pioche."
         ]
       },
       en: {
         title: "Helpful Ghost",
         text: [
-          "The spirit of a dead adventurer appears and reveals the exact location of the heroes' objective on the board (but not the path to it). Then it dissolves.",
-          "If you play without a game master, draw another card."
+          "The spirit of a fallen adventurer appears and reveals the exact location of an item. Then it dissolves.",
+          "Draw Treasure cards until you find an item.",
+          "Place the other cards back under the deck."
         ]
       }
     }
