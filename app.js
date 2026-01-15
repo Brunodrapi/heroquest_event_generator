@@ -250,7 +250,7 @@ function renderWandering(card) {
 
 function clearCard() {
   if (qs("cardTitle")) qs("cardTitle").textContent = "—";
-  if (qs("cardBody")) qs("cardBody").innerHTML = `<p class="muted">${lang === "fr" ? "Clique sur “Quelque chose se passe ?”." : "Click “Does something happen?”."}</p>`;
+  if (qs("cardBody")) qs("cardBody").innerHTML = `<p class="muted">${lang === "fr" ? "Tirer un évenement" : "Draw an event"}</p>`;
   if (qs("cardActions")) qs("cardActions").hidden = true;
   if (qs("rollResult")) qs("rollResult").textContent = "";
   if (qs("cardIcon")) qs("cardIcon").textContent = "☁️";
